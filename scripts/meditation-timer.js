@@ -406,8 +406,8 @@ function start() {
 	show('stop-button');
 	show('pause-button');
 	getActiveBell().get(0).play();
-	getActiveBell.get(0).pause();
-	getActiveBell.get(0).currentTime = 0;
+	getActiveBell().get(0).pause();
+	getActiveBell().get(0).currentTime = 0;
 	medTimer.setDelay(delTimer.time);
 	intTimer.setDelay(delTimer.time);
 	hideArrows();
