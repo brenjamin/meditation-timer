@@ -1,0 +1,141 @@
+/* Beach stylesheet */
+
+body {
+	background: url(../images/beach.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #102D41; /* dark ocean blue */
+}
+
+a {
+	color: inherit;
+}
+
+#header {
+	background-color: #AA8670; /* light sand brown */
+}
+
+#logo:after {
+	content: url(../images/beach-logo.png);
+}
+
+#info:after {
+	content: url(../images/beach-info.png);
+}
+
+#contact:after {
+	content: url(../images/beach-contact.png);
+}
+
+.up-arrow {
+	border-bottom: 25px solid #203E46; /* dark ocean green */
+
+}
+
+.down-arrow {
+	border-top: 25px solid #203E46; /* dark ocean green */
+
+}
+
+.button {
+	color: #102D41; /* dark ocean blue */
+	background-color: #AA8670; /* light sand brown */
+}
+
+li.active {
+	color: #AA8670 !important; /* light sand brown */
+	background-color: #102D41 !important; /* dark ocean blue */
+}
+
+.highlighted {
+	background-color: 	#F1B27C; /* lighter sand for highlight */
+}
+
+.ui-dialog-titlebar {
+	background: #102D41; /* dark ocean blue */
+	color: #AA8670; /* light sand brown */
+}
+
+.ui-dialog {
+	background: #AA8670; /* light sand brown */
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2)
+{ 
+	.up-arrow {
+	border-bottom: 75px solid #203E46;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #203E46;
+	}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.up-arrow {
+	border-bottom: 75px solid #203E46;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #203E46;
+	}
+  	
+}
+
+/*iPhone 4*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+}
+
+/*iPhone 5*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+}
+
+/*iPad 3/4*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+
+}

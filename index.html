@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<title>Meditation Timer</title>
+        <link rel='stylesheet' type='text/css' href='css/meyerweb_reset.css'>
+   		<link rel='stylesheet' type='text/css' href='css/main.css'>
+		<link rel='stylesheet' type='text/css' href='css/jquery-ui.min.css'>
+		<link rel='stylesheet' type='text/css' href='css/jquery-ui.theme.min.css'>
+		<link rel='stylesheet' type='text/css' href='css/jquery-ui.structure.min.css'>
+		<script>
+			function chooseStyle() {
+			  var css = new Array('night-sky', 'forest', 'beach');;
+			  var i = Math.floor(Math.random()*css.length);
+			  var style = "css/"+css[i]+".css";
+  
+  			return style;
+			}
+			
+			document.write('<link rel="stylesheet" href="'+chooseStyle()+'" type="text/css">');
+		</script>
+	</head>
+
+	<body>
+    <div id='site'>
+		<div id='header'>
+			<div class="image" id="logo"></div>
+			<nav>
+				<ul>
+					<a href='#' id="info"><li></li></a>
+					<a href='#'><li id="contact"></li></a>
+				</ul>
+			</nav>
+		</div>
+		<div id='main'>
+			<div id='timer'>
+				<div id='arrows-up' class='visible-arrow'>
+					<div id='minute-up' class='arrow up-arrow minute-arrow'></div>
+					<div id='second-up' class='arrow up-arrow second-arrow'></div>
+				</div>
+				<div id = 'timers'>
+					<div id='delay-time' class='invisible'>
+						<p class='time'>00:10</p>
+					</div>
+					<div id='meditation-time' class='visible'>
+						<p class='time'>10:00</p>
+					</div>
+					<div id='interval-time' class='invisible'>
+						<p class='time'>05:00</p>
+					</div>
+				</div>
+				<div id='arrows-down' class='visible-arrow'>
+					<div id='minute-down' class='arrow down-arrow minute-arrow'></div>
+					<div id='second-down' class='arrow down-arrow second-arrow'></div>
+				</div>
+			</div>
+			<div id='buttons'>
+				<ul id='timer-buttons'>
+					<li id='delay' class='button'>Delay<p class='small-time time' id='delay-small'>00:10</p></li>
+					<li class='active button' id='meditation'>Meditation<p class='small-time time' id='meditation-small'>10:00</p></li>
+					<li id='interval' class='button'>Interval<p class='small-time time' id='interval-small'>05:00</p></li>
+				</ul>
+				<ul id='bells'>
+						<li class='button playing active' id='bell-1'>Bell 1</li>
+						<li id='bell-2' class='button'>Bell 2</li>
+						<li id='bell-3' class='button'>Bell 3</li>
+				</ul>
+				<ul id='start-stop-buttons'>
+					<li class='button' id='start-button'>Start</li>
+					<li class='button hidden' id='stop-button'>Stop</li>
+					<li class='button hidden' id='pause-button'>Pause</li>
+					<li class='button hidden' id='resume-button'>Resume</li>
+			</div>
+
+			<div id="social-media">
+				<span class='st_sharethis_large' displayText='ShareThis'></span>
+				<span class='st_facebook_large' displayText='Facebook'></span>
+				<span class='st_googleplus_large' displayText='Google +'></span>
+				<span class='st_twitter_large' displayText='Tweet'></span>
+				<span class='st_pinterest_large' displayText='Pinterest'></span>
+				<span class='st_email_large' displayText='Email'></span>
+			</div>
+
+			<div id='bell-audio'>
+				<audio id='bell-1-audio'><source src='bells/bell-1.mp3' type='audio/mp3'></audio>
+				<audio id='bell-2-audio'><source src='bells/bell-2.mp3' type='audio/mp3'></audio>
+				<audio id='bell-3-audio'><source src='bells/bell-3.mp3' type='audio/mp3'></audio>
+				<audio id="bell-1-long-audio"><source src="bells/bell-1-long.mp3" type="audio/mp3"></audio>
+				<audio id="bell-2-long-audio"><source src="bells/bell-2-long.mp3" type="audio/mp3"></audio>
+				<audio id="bell-3-long-audio"><source src="bells/bell-3-long.mp3" type="audio/mp3"></audio>
+			</div>
+    	</div>
+
+    	<div id="info-dialog" title="About This Site">
+    		<h1>Using the Timer</h1>
+    		<p>You can set the timers by clicking on the appropriate button and using the up and down arrows.</p><br>
+    		<p><span class="bold">Delay Timer:</span> Time for you to prepare.  This is how much time will pass before the bell rings.</p><br>
+    		<p><span class="bold">Meditation Timer:</span> The amount of time you want to meditate.</p><br>
+    		<p><span class="bold">Interval Timer</span>: Set this timer if you want a single bell to ring in the middle of your meditation.  If not, set this to zero.</p><br>
+    		<h1>Choosing a Bell</h1>
+    		<p>There are three bells to choose from.  Click on each bell button to preview.  The bell you choose will chime three times at the start and end of your meditation.</p>
+
+    	</div>
+
+
+    	<div id="contact-dialog" title="Contact Information">
+    		<p>This site was designed and built in my spare time. I hope you find it useful.</p><br><p>You can reach me with comments or questions at <a href="mailto:bdbrophy@gmail.com">bdbrophy@gmail.com</a></p><br>
+    		<div id="copyright">
+    		<h1>Licensing Information</h1>
+    		<ul id="licenses">
+    			<li>Sports graphic by <a href="http://www.icons8.com">Icons8</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a><br><br></li><br>
+    			<li>Info graphic by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a><br><br></li><br>
+    			<li>Just Icons graphic by <a href="http://RamiMcM.in">Rami Mcmin</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a><br><br></li><br>
+    			<li><a href="https://www.flickr.com/photos/chibitomu/7990085185/">"Beach at Sunset"</a> by <a href="https://www.flickr.com/photos/chibitomu">Mirai Takahashi</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a><br><br></li><br>
+    			<li><a href="https://www.flickr.com/photos/dianasch/17134232071/">"Night Sky and Clouds, Arches National Park"</a> by <a href="https://www.flickr.com/photos/dianasch/">Diana Robinson</a> is licensed under <a href="https://creativecommons.org/licenses/by-nd/2.0/">CC BY-ND 2.0</a><br><br></li><br>
+    			<li><a href="https://www.flickr.com/photos/gruenewiese/14849078221/">"Forest landscape"</a> by <a href="https://www.flickr.com/photos/gruenewiese/">Olli Henze</a> is licensed under <a href="https://creativecommons.org/licenses/by-nd/2.0/">CC BY-ND 2.0</a><br><br></li><br>
+    			<li><a href="http://www.freesound.org/people/itsallhappening/sounds/48795/">Bell 1</a> by <a href="http://www.freesound.org/people/itsallhappening/">itsallhappening</a> is licensed under <a href="http://creativecommons.org/licenses/sampling+/1.0/">CC Sampling Plus 1.0</a><br><br></li><br>
+    			<li><a href="http://www.freesound.org/people/suburban%20grilla/sounds/2166/">Bell 2</a> by <a href="http://www.freesound.org/people/suburban%20grilla/">suburban grilla</a> is licensed under <a href="http://creativecommons.org/licenses/sampling+/1.0/">CC Sampling Plus 1.0</a><br><br></li><br>
+    			<li><a href="http://freesound.org/people/kerri/sounds/27421/">Bell 3</a> by <a href="http://freesound.org/people/kerri/">kerri</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></li>
+    		</ul>
+    		</div>
+
+    	</div>
+
+    	<script src="scripts/jquery-1.11.3.min.js"></script>
+    	<script src="scripts/jquery-ui.min.js"></script>
+    	<script src="scripts/meditation-timer.js"></script>
+    	<script type="text/javascript">var switchTo5x=true;</script>
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">stLight.options({publisher: "0a21025d-e9c9-44e8-abfa-c44090903231", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    </body>
+
+</html>

@@ -1,0 +1,139 @@
+/* Night Sky Stylesheet */
+
+body {
+	background: url(../images/night-sky.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #AED8E6;
+	height: 100%;
+}
+
+#logo:after {
+	content: url(../images/night-sky-logo.png);
+}
+
+#info:after {
+	content: url(../images/night-sky-info.png);
+}
+
+#contact:after {
+	content: url(../images/night-sky-contact.png);
+}
+
+a {
+	color: inherit;
+}
+
+#header {
+	background-color: #23434E; /* dark sky green */
+	border-bottom-color: #AED8E6;
+}
+
+.up-arrow {
+	border-bottom: 25px solid #23434E;
+}
+
+.down-arrow {
+	border-top: 25px solid #23434E;
+}
+
+.button {
+	color: #AED8E6; /* starry white */
+	background-color: #23434E ;  /* dark sky green */
+}
+
+li.active {
+	color: #23434E !important; /* dark sky green */
+	background-color: #AED8E6 !important; /* starry white */
+}
+
+.highlighted {
+	background-color: #375661; /* slightly lighter green for highlight */
+}
+
+.ui-dialog-titlebar {
+	background: #23434E ;  /* dark sky green */
+	color: #AED8E6; /* starry white */
+}
+
+.ui-dialog {
+	background: #AED8E6; /* starry white */
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2)
+{
+	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+
+}
+
+/*iPhone 4*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+}
+
+/*iPhone 5*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+}
+
+/*iPad 3/4*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.up-arrow {
+	border-bottom: 75px solid #23434E;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #23434E;
+	}
+
+}

@@ -1,0 +1,432 @@
+/* Styles for Meditation Timer (meditationtimer.com) */
+/* Reset applied in another external stylesheet */
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #23434E; /* dark sky green */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, .bold {
+	font-weight: bold;
+}
+
+#site {
+    width: 100%;
+}
+
+/* Header Styles */
+
+#header {
+    overflow: auto;
+    height: 50px;
+    border-bottom: 2px solid white;
+}
+
+#logo {
+	float: left;  
+	margin-left: 5%;
+	position: relative;
+	top: 2px;
+}
+
+nav {
+	float: right;
+	margin-right: 5%;
+	position: relative;
+	top: 2px;
+}
+
+#info {
+	margin-right: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+    display: inline-block;
+}
+
+
+/* Main Content Styles */
+
+#main {
+    clear: both;
+    text-align: center;
+    margin-top: 125px;
+    
+}
+
+#buttons {
+	width: 100%;
+	position: relative;
+	top: -20px;
+}
+
+#timer {
+	/*width: 386px;*/
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#timers {
+	/*width: 386px;
+	margin: 0 auto; */
+	font-size: 8em;
+	font-weight: bold;
+	clear: left;
+	position: relative;
+	top: -30px;
+}
+
+.invisible, .hidden {
+	display: none;
+}
+
+.minute-arrow {
+	margin-left: ;
+	margin-right: ;
+}
+
+#arrows-up {
+	position: relative;
+	top: -23px;
+	margin-left: 53px
+
+}
+#second-up {
+	margin-left: 131px;
+}
+
+#second-down {
+	margin-left: 131px;
+}
+
+#arrows-down {
+	position: relative;
+	top: -40px;
+	margin-left: 1px;
+}
+
+.up-arrow {
+	position: relative;
+	z-index: 1;
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	float: left;
+	cursor: pointer;
+	-webkit-transition: visibility 1s, opacity 1s;
+	transition: visibility 1s ease, opacity 1s;
+	/* margin-left: 50px; */
+}
+
+.down-arrow {
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	float: left;
+	cursor: pointer;
+	margin-left: 50px;
+	-webkit-transition: visibility 1s ease, opacity 1s;
+	transition: visibility 1s ease, opacity 1s;
+}
+
+#timer-buttons, #bells {
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.button {
+	height: auto;
+	border: 1px solid black;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 15%;
+	cursor: pointer;
+}
+
+#buttons {
+	margin-bottom: 30px;
+}
+
+
+.small-time {
+	font-size: .8em;
+}
+
+.visible-arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.invisible-arrow {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 1s linear;
+}
+
+#copyright {
+	font-size: .5em;
+}
+
+#info-dialog, #contact-dialog {
+	display: none;
+}
+
+#copyright a, #contact-dialog a {
+	text-decoration: underline;
+}
+
+#licenses li {
+	list-style-type: disc;
+}
+
+
+/*iPhone 6*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2)
+{ 
+	body {
+		font-size: 250%;
+	}
+
+	#timer {
+		margin-top: 25%;
+	}
+
+	.up-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+
+	.down-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+	
+	#arrows-up {
+		margin-left: 103px;
+	}
+
+	#arrows-down {
+		margin-left: 45px;
+	}
+
+	#buttons ul {
+		margin-top: 5%;
+	}
+
+	#second-up {
+		margin-left: 315px;
+	}
+
+	#second-down {
+		margin-left: 320px;
+	}
+
+}
+
+/*iPad*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+	body {
+		font-size: 250%;
+	}
+
+	#timer {
+		margin-top: 5%;
+	}
+
+	.up-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+
+	.down-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+	
+	#arrows-up {
+		margin-left: 103px;
+	}
+
+	#arrows-down {
+		margin-left: 45px;
+	}
+
+	#buttons ul {
+		margin-top: 5%;
+	}
+
+	#second-up {
+		margin-left: 315px;
+	}
+
+	#second-down {
+		margin-left: 320px;
+	}
+}
+
+/*iPhone 4*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+	body {
+		font-size: 250%;
+	}
+
+	#timer {
+		margin-top: 10%;
+	}
+
+	.up-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+
+	.down-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+	
+	#arrows-up {
+		margin-left: 103px;
+	}
+
+	#arrows-down {
+		margin-left: 45px;
+	}
+
+	#buttons ul {
+		margin-top: 5%;
+	}
+
+	#second-up {
+		margin-left: 315px;
+	}
+
+	#second-down {
+		margin-left: 320px;
+	}
+}
+
+/*iPhone 5*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+	body {
+		font-size: 250%;
+	}
+
+	#timer {
+		margin-top: 20%;
+	}
+
+	.up-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+
+	.down-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+	
+	#arrows-up {
+		margin-left: 103px;
+	}
+
+	#arrows-down {
+		margin-left: 45px;
+	}
+
+	#buttons ul {
+		margin-top: 5%;
+	}
+
+	#second-up {
+		margin-left: 315px;
+	}
+
+	#second-down {
+		margin-left: 320px;
+	}
+}
+
+/*iPad 3/4*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	body {
+		font-size: 250%;
+	}
+
+	#timer {
+		margin-top: 5%;
+	}
+
+	.up-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+
+	.down-arrow {
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+	}
+	
+	#arrows-up {
+		margin-left: 103px;
+	}
+
+	#arrows-down {
+		margin-left: 45px;
+	}
+
+	#buttons ul {
+		margin-top: 5%;
+	}
+
+	#second-up {
+		margin-left: 315px;
+	}
+
+	#second-down {
+		margin-left: 320px;
+	}  	
+
+}
+
+
+
+

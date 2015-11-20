@@ -1,0 +1,144 @@
+/* Forest stylesheet */
+
+body {
+	background: url(../images/forest.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #FBF695; /* very light green for timer text */
+}
+
+a {
+	color: #C1BD26;;
+}
+
+#logo:after {
+	content: url(../images/forest-logo.png);
+}
+
+#info:after {
+	content: url(../images/forest-info.png);
+}
+
+#contact:after {
+	content: url(../images/forest-contact.png);
+}
+
+#header {
+	background-color: #38220C; /* dark tree brown*/
+}
+
+.up-arrow {
+	border-bottom: 25px solid 	#232404; /* dark tree brown */
+
+}
+
+.down-arrow {
+	border-top: 25px solid 	#232404;
+
+}
+
+.button {
+	color: #38220C; /* dark tree brown */
+	background-color: #C1BD26; /* moss green */
+}
+
+li.active {
+	color: #C1BD26 !important; /* moss green */
+	background-color: #38220C!important; /* dark tree brown */
+}
+
+.highlighted {
+	background-color: #D5CC3C; /* lighter green for highlight */
+}
+
+.ui-dialog-titlebar {
+	background: #38220C; /* dark tree brown */
+	color: #C1BD26; /* moss green */
+}
+
+.ui-dialog {
+	background: #C1BD26; /* moss green */
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2)
+{ 
+	.up-arrow {
+	border-bottom: 75px solid #232404;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #232404;
+	}
+	
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	
+  	.up-arrow {
+		border-bottom: 75px solid #232404;
+	}
+
+	.down-arrow {
+		border-top: 75px solid #232404;
+	}
+  	
+}
+
+/*iPhone 4*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #232404;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #232404;
+	}
+}
+
+/*iPhone 5*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #232404;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #232404;
+	}
+}
+
+/*iPad 3/4*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	.up-arrow {
+	border-bottom: 75px solid #232404;
+	}
+
+	.down-arrow {
+	border-top: 75px solid #232404;
+	}
+
+}
+
