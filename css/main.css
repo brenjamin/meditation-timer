@@ -43,6 +43,10 @@ nav {
 	margin-right: 5px;
 }
 
+#info, #contact {
+	cursor: pointer;
+}
+
 a {
 	text-decoration: none;
 }
