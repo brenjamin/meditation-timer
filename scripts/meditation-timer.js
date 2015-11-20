@@ -290,7 +290,7 @@ intervalTimer.prototype.constructor = intervalTimer;
 
 var medTimer = new meditationTimer(600, 'meditation');
 var delTimer = new delayTimer(10, 'delay');
-var intTimer = new intervalTimer(300, 'interval');
+var intTimer = new intervalTimer(0, 'interval');
 
 // $('#delay-time').find('.time').text(delTimer.getText());
 // $('#meditation-time').find('.time').text(medTimer.getText());
